@@ -1,0 +1,35 @@
+<div class="centerContainer" ng-controller="HomeController">
+<h1>Create a room and chat together</h1>
+<input type="text" class="form-control" ng-model="chatUserName" placeholder="Your chat Name..." style="padding:0px 10px;"/>
+<br/>
+<br/>
+<div class="inputwrapper">	
+		<span>chat/</span>
+		
+		<input type="text" ng-model="chatRoomName"/>
+		<button class="btn btn-danger btn-red" type="button" ng-click="startChat()" ng-disabled="!(chatRoomName && chatUserName)">START</button>
+</div>
+<br/><br/><br/><br/>
+<h2>Getting Started !!!</h2>
+<hr style="width:5%;"/>
+<br/>
+<div class="col-md-12">
+	<div class="row">
+        <div class="col-lg-4">
+            <img width="200" height="200" alt="Step 1" src="imgs/step1.png" class="img-circle">
+            <h3>1. Create a Room</h3>
+            <p>Choose a name for your room.</p>          
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+			<img width="200" height="200" alt="Step 2" src="imgs/step2.png" class="img-circle">
+			<h3>2. Share the link</h3>
+			<p>Share the link mentioned with your friends.</p>   
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+			<img width="200" height="200" alt="Step 3" src="imgs/step3.png" class="img-circle">
+			<h3>3. Chat together, Smile together.</h3>
+			<p>Once they hit the link, they will appear in the chat with you!.</p>   
+        </div><!-- /.col-lg-4 -->
+      </div>
+</div>
+</div>
